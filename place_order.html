@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h2>Place Order</h2>
+    <form method="POST">
+        <input type="text" name="item_name" placeholder="Item Name" required><br><br>
+        <input type="number" name="quantity" placeholder="Quantity" required><br><br>
+        <button type="submit">Place Order</button>
+    </form>
+    <br>
+    <a href="{{ url_for('user_dashboard') }}">Back to Dashboard</a>
+</body>
+</html>

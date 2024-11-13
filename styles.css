@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Centering Forms and Buttons */
+.form-container, .dashboard-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .form-container, .dashboard-container {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+}
